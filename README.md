@@ -1,10 +1,6 @@
 # DRAFT - Angular Boot Camp Curriculum - built-in-pipes
 
-![ABC](https://angularbootcamp.com/images/angular-boot-camp-logo.svg)
-![OD](https://oasisdigital.com/images/od-logo.svg)
-
 <img src="https://angularbootcamp.com/images/angular-boot-camp-logo.svg" width="394" height="106" />
-<img src="https://oasisdigital.com/images/od-logo.svg" width="379" height="143" />
 
 Hello and welcome to the Angular Boot Camp curriculum. This repository
 represents one of many steps that students will explore during Angular
@@ -46,3 +42,5 @@ to use in teaching
 [Angular Boot Camp](https://angularbootcamp.com/)
 
 Copyright 2018 Oasis Digital Solutions Inc.
+
+<img src="https://oasisdigital.com/images/od-logo.svg" width="379" height="143" />
