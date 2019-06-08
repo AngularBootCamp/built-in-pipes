@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+// prettier-ignore
 const recordList = [
   { empName: 'Cynthia Cunningham', units:     75.29879815, totalRevenue:    46739.8278,   percent:  0.0266 },
   { empName: 'Peter Clark',        units:    100,          totalRevenue:     8675.309,    percent:  0.0049 },
