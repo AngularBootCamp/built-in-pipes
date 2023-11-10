@@ -1,3 +1,13 @@
+import {
+  NgFor,
+  NgIf,
+  UpperCasePipe,
+  JsonPipe,
+  DecimalPipe,
+  PercentPipe,
+  CurrencyPipe,
+  DatePipe
+} from '@angular/common';
 import { Component } from '@angular/core';
 
 // prettier-ignore
@@ -14,7 +24,18 @@ const recordList = [
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
+  standalone: true,
+  imports: [
+    NgFor,
+    NgIf,
+    UpperCasePipe,
+    JsonPipe,
+    DecimalPipe,
+    PercentPipe,
+    CurrencyPipe,
+    DatePipe
+  ]
 })
 export class AppComponent {
   reportDate = new Date('Dec 25, 2058');
