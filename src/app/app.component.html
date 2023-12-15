@@ -1,7 +1,5 @@
 <article>
-  <header>
-    Sales Report: {{ reportDate | date : 'mediumDate' }}
-  </header>
+  <header>Sales Report: {{ reportDate | date: 'mediumDate' }}</header>
   <table>
     <thead>
       <tr>
@@ -16,20 +14,20 @@
       <tr *ngFor="let record of records">
         <td>{{ record.empName }}</td>
         <td class="number-column">
-          {{ record.units | number : '1.4-4' }}
+          {{ record.units | number: '1.4-4' }}
         </td>
         <td class="number-column">
-          {{ record.totalRevenue | currency : 'USD' : 'symbol' }}
+          {{ record.totalRevenue | currency: 'USD' : 'symbol' }}
         </td>
         <td class="number-column">
-          {{ record.percent / 100 | percent : '1.2-2' }}
+          {{ record.percent / 100 | percent: '1.2-2' }}
         </td>
       </tr>
     </tbody>
   </table>
 
   Report expires:
-  {{ expirationDate | date : 'longDate' | uppercase }}
+  {{ expirationDate | date: 'longDate' | uppercase }}
 </article>
 
 <button (click)="showJSON = !showJSON">
