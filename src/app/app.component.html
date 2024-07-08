@@ -11,18 +11,20 @@
     </thead>
 
     <tbody>
-      <tr *ngFor="let record of records">
-        <td>{{ record.empName }}</td>
-        <td class="number-column">
-          {{ record.units | number: '1.4-4' }}
-        </td>
-        <td class="number-column">
-          {{ record.totalRevenue | currency: 'USD' : 'symbol' }}
-        </td>
-        <td class="number-column">
-          {{ record.percent / 100 | percent: '1.2-2' }}
-        </td>
-      </tr>
+      @for (record of records; track record) {
+        <tr>
+          <td>{{ record.empName }}</td>
+          <td class="number-column">
+            {{ record.units | number: '1.4-4' }}
+          </td>
+          <td class="number-column">
+            {{ record.totalRevenue | currency: 'USD' : 'symbol' }}
+          </td>
+          <td class="number-column">
+            {{ record.percent / 100 | percent: '1.2-2' }}
+          </td>
+        </tr>
+      }
     </tbody>
   </table>
 
@@ -34,4 +36,6 @@
   {{ showJSON ? 'Hide' : 'Show' }} data for export
 </button>
 
-<pre *ngIf="showJSON">{{ records | json }}</pre>
+@if (showJSON) {
+  <pre>{{ records | json }}</pre>
+}

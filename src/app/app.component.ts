@@ -1,6 +1,4 @@
 import {
-  NgFor,
-  NgIf,
   UpperCasePipe,
   JsonPipe,
   DecimalPipe,
@@ -27,8 +25,6 @@ const recordList = [
   templateUrl: './app.component.html',
   standalone: true,
   imports: [
-    NgFor,
-    NgIf,
     UpperCasePipe,
     JsonPipe,
     DecimalPipe,
